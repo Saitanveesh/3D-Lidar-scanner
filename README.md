@@ -6,7 +6,7 @@ The project captures environment details by rotating a time-of-flight (ToF) lase
 
 ---
 
-##  Key Specifications
+## Key Specifications
 
 * **Resolution:** ρ = 1cm, θ = 0.15°, φ = 0.3°
 * **Max Range:** 8 meters (with TF-Luna module)
@@ -16,18 +16,19 @@ The project captures environment details by rotating a time-of-flight (ToF) lase
 
 ---
 
-##  Repository Structure
+## Repository Structure
 
-This repository is neatly split into the following subfolders for easy navigation:
+This repository is organized into the following direct directories:
 
-* **`/Mechanical`:** Contains 3D-printable STL files, SolidWorks source models, and templates for mechanical linkages.
-* **`/Electronics`:** Includes circuit schematics, wiring layouts, and component connection maps.
-* **`/Arduino_Firmware`:** The core MCU code written for the STM32 chip to control motors and stream data.
-* **`/LidarViewer`:** A Processing (Java framework) graphical interface to render, pan, and save your 3D point cloud.
+* **`/STL/Files`:** Contains all the 3D-printable `.stl` files for mechanical fabrication.
+* **`/SLDPTR`:** Contains your native SolidWorks part source models.
+* **`/Circuit`:** Includes hardware schematics, wiring layouts, and electronics setup.
+* **`/Ardunio Code`:** The core MCU firmware code written for the STM32 microcontroller.
+* **`/Processing Code/Lidar Viewer`:** The processing sketches used to render and view the 3D point cloud interface.
 
 ---
 
-## 🛠️ Bill of Materials (BOM)
+## Bill of Materials (BOM)
 
 The estimated cost to build this unit is approximately **₹3,700** (~$40 USD). Below is the itemized component breakdown with current Indian Rupee (INR) market pricing:
 
@@ -47,11 +48,10 @@ The estimated cost to build this unit is approximately **₹3,700** (~$40 USD). 
 | - | PLA Filament (approx. 100g) | ₹280 |
 | **Total** | **Estimated Hardware Investment** | **~ ₹4,758** |
 
-*Note: Prices may vary slightly depending on your preferred e-commerce vendor or local electronics store container.*
+*Note: Prices may vary slightly depending on your preferred e-commerce vendor or local electronics store.*
 
 ---
-
-##  Software & Toolchain Requirements
+## Software & Toolchain Requirements
 
 To compile and execute the system files, you will need:
 1. **Arduino IDE** (with the `stm32duino` board manager library installed).
@@ -59,6 +59,6 @@ To compile and execute the system files, you will need:
 
 ---
 
-##  License & Attribution
+## 📝 License
 
-This project is open-source and released under the Creative Commons **CC BY 4.0** license. Feel free to clone, modify, and improve it!
+This project is open-source software and is licensed under the **MIT License**. See the accompanying `LICENSE` file for full terms and details.
